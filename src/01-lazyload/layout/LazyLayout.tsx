@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 import { LazyPage, LazyPage2, LazyPage3 } from "../pages";
 
@@ -34,3 +35,18 @@ export const LazyLayout= () => {
 };
 
 export default LazyLayout;
+=======
+import { Navigation } from '../router/Navigation';
+
+export const LazyLayout = () => {
+    return (
+        <div>
+            <h1>LazyLayout - Main Page</h1>
+            <Navigation />
+        </div>
+    )
+}
+
+
+export default LazyLayout;
+>>>>>>> 974413b64e35c00c615f3e5e800f29cbedc10a4c
