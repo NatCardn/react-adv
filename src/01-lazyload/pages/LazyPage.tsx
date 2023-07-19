@@ -8,3 +8,5 @@ export const LazyPage= () => {
     );
 };
 
+export default LazyPage;
+
