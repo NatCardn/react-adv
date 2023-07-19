@@ -1,10 +1,9 @@
 
-const NoLazy = () => {
+export const NoLazy = () => {
     return (
         <div>
-            Not LAzy component
+            <h1> Not LAzy component</h1>
         </div>
     );
 };
 
-export default NoLazy;
