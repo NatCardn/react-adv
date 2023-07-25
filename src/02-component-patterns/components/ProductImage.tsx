@@ -10,18 +10,18 @@ export interface Props {
 }
 export const ProductImage = ({img, className, style}: Props) => {
     const {product} = useContext(ProductContex);
-    let imgToShow :string;
+    let iToShow :string;
     if (img) {
-        imgToShow = img;
+        iToShow = img;
     }else if (product.img){
-        imgToShow = product.img
+        iToShow = product.img
     }else{
-        imgToShow = noImage
+        iToShow = noImage
     }
     return(
         <img 
             className={`${styles.productImg} ${className}`} 
-            src={imgToShow} alt="product image"
+            src={iToShow} alt="product in car"
             style={style} />
 
     )

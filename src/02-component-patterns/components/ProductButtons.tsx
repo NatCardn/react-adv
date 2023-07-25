@@ -5,8 +5,9 @@ import styles from '../styles/styles.module.css';
 export interface Props{
     className?:  string;
     style?: CSSProperties;
+    value?: number
 }
-export const ProductButtons = ({className, style}: Props) => {
+export const ProductButtons = ({className, style, value}: Props) => {
 
     const {increaseBy, counter} = useContext(ProductContex);
     return(
@@ -15,7 +16,7 @@ export const ProductButtons = ({className, style}: Props) => {
                     className={ styles.buttonMinus }
                     onClick={ () => increaseBy(-1)}>-</button>
 
-                <div className={ styles. countLabel }>{counter}</div>
+                <div className={ styles.countLabel }>{counter}</div>
 
                 <button 
                     className={ styles.buttonAdd}
